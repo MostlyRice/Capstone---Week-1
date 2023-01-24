@@ -13,9 +13,14 @@ def banner():
     stars = '*' * len(message)
     print(f'\n{stars} \n{message} \n{stars}\n')
 
-banner()
+def instructions():
+    """ Display instructions for how to use the program """
+    print('Enter a sentence and this program will convert it to camelCase.')
 
 def main():
+    banner()
+    instructions()
+
     sentence = input('Enter a short sentence to convert to camel case: ')
     sample_special_characters = ['#','+','"'] 
 

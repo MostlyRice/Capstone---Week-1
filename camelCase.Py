@@ -7,6 +7,14 @@ Test your program with different example inputs, and comment your code.
 
 """
 
+def banner():
+    """ Display program name """ # triple quotes are doc strings
+    message = 'Awesome camelCase Program!'
+    stars = '*' * len(message)
+    print(f'\n{stars} \n{message} \n{stars}\n')
+
+banner()
+
 def main():
     sentence = input('Enter a short sentence to convert to camel case: ')
     sample_special_characters = ['#','+','"'] 
